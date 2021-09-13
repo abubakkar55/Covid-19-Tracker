@@ -1,0 +1,38 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Heebo', sans-serif;
+}
+
+.gray{
+    color: #7D92C9;
+}
+.blue{
+    background-color: #1468CD;
+}
+
+.dark-gray{
+    color: #43567a;
+}
+
+.bg{
+    background-color: #F7F9FE;
+}
+.crimson{
+    color: #F86168;
+}
+
+#selection {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;       
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="bg">
+        <div class="container mx-auto px-10 py-5 flex justify-between items-center">
+            <div>
+                <img src="images/logo-dark.png" alt="logo">
+            </div>
+            <div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#" class="gray font-semibold mr-10"> Home </a></li>
+                        <li><a href="#" class="gray font-semibold mr-10"> দেশ অনুসন্ধান</a></li>
+                        <li><a href="https://abubakkar55.github.io/latest--personal--portfolio/" target="_blank"
+                                class="gray font-semibold mr-10"> About Me </a></li>
+                        <li><a href="https://github.com/javieraviles/covidAPI" class="gray font-semibold mr-10"> About
+                                Api </a></li>
+                        <li><a href="#" class="gray font-semibold mr-10"> Contact us </a></li>
+                        <li><a href="#" class="px-6 py-3 text-white rounded-3xl blue"> Search Country <i
+                                    class="ml-2  fas fa-search"></i> </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main class="container mx-auto px-12">
+        <section class="flex items-center justify-between gap-6 py-10">
+            <div class="w-2/5">
+                <div class="heading mb-16">
+                    <h1 class="uppercase flex mb-5">
+                        <span class="text-7xl font-extrabold dark-gray"> corona</span>
+                        <div class="ml-2">
+                            <span class="crimson text-3xl font-black leading-0"> covid-19</span>
+                            <span class="dark-gray text-4xl font-bold block -mt-2"> virus</span>
+                        </div>
+                    </h1>
+
+                    <p class="text-gray-500 mb-8">
+                        The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, China in December 2019, the
+                        outbreak was later recognized as a pandemic by the World Health Organization (WHO) on 11 March
+                        2020.
+
+                    </p>
+                    <a href="#" class="px-6 py-3 text-white rounded-3xl blue mr-6"> Search Country </a>
+                    <a href="https://abubakkar55.github.io/latest--personal--portfolio/" target="_blank" class="text-xl uppercase gray font-bold"> visit My portfolio </a>
+                </div>
+
+                <div class="flex gap-10">
+                    <div>
+                        <span class="gray"> মোট আক্রান্তঃ</span>
+                        <h3 class="dark-gray font-extrabold text-2xl mt-2">222877886 </h3>
+                    </div>
+                    <div>
+                        <span class="gray"> মোট মৃতঃ
+                        </span>
+                        <h3 class="dark-gray font-extrabold text-2xl mt-2">4602890 </h3>
+                    </div>
+                    <div>
+                        <span class="gray"> নতুন আক্রান্তঃ </span>
+                        <h3 class="dark-gray font-extrabold text-2xl mt-2">347370 </h3>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="w-3/5">
+                <img src="images/header-a.png" class="w-4/5 ml-20" alt="header-img">
+            </div>
+        </section>
+
+        <!-- search part -->
+        <section class="py-28 relative">
+            <h3 class="text-center text-3xl font-extrabold mb-10">SEARCH BY COUNTRY </h3>
+            <select name="country" id="selection"
+                class="mx-auto outline-none w-3/5 flex  bg-gray-200  p-4 font-black rounded">
+                <option value="country" id="option-default">All Countries</option>
+            </select>
+            <a href=""><i class="fas fa-chevron-down absolute right-64 top-52" id="chevron-down"></i></a>
+            <button id="search-btn"
+                class="outline-none bg-green-400 px-5 py-4 text-white rounded shadow absolute top-48 right-32"> search
+            </button>
+            <div id="main-card" class="py-16 grid grid-cols-4 gap-5"> </div>
+
+        </section>
+    </main>
+
+    <!-- custom js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
